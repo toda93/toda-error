@@ -1,6 +1,6 @@
-import {NOT_FOUND, NOT_NULL, UNIQUE, UNKNOWN} from './code';
+const {NOT_FOUND, NOT_NULL, UNIQUE, UNKNOWN} = require('./code');
 
-export function httpErrorHandler(e, req, res, next) {
+ function httpErrorHandler(e, req, res, next) {
     const error = errorCatch(e);
 
     if(process.env.NODE_ENV === 'development'){
@@ -11,7 +11,7 @@ export function httpErrorHandler(e, req, res, next) {
     return res.status(error.status).json({success: false, errors: error.errors});
 }
 
-export function errorCatch(e) {
+ function errorCatch(e) {
     let status = 400;
     let errors = [];
 
@@ -75,5 +75,7 @@ export function errorCatch(e) {
     }
 }
 
-
-
+module.exports = {
+    httpErrorHandler,
+    errorCatch
+};
