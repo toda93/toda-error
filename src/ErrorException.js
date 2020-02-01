@@ -1,5 +1,5 @@
 module.exports = (function () {
-    function ErrorException(code, errors) {
+    function ErrorException(code, errors = []) {
         if (errors === void 0) { errors = []; }
         this.name = 'ErrorException';
         this.message = code;
