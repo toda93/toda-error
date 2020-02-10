@@ -1,28 +1,28 @@
 {
-  "name": "@azteam/error",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/toda93/error.git"
-  },
-  "engines": {
-    "node": ">= 10.0.0",
-    "npm": "^6.0.0"
-  },
-  "keywords": [
-    "toda",
-    "nodejs",
-    "error"
-  ],
-  "author": "toda <sp.azsolution.net@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/toda93/error/issues"
-  },
-  "homepage": "https://github.com/toda93/error#readme",
-  "scripts": {
-    "test": "node src/index.js"
-  }
+    "name": "@azteam/error",
+    "version": "1.0.1",
+    "description": "",
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toda93/error.git"
+    },
+    "engines": {
+        "node": ">= 10.0.0",
+        "npm": "^6.0.0"
+    },
+    "keywords": [
+        "toda",
+        "nodejs",
+        "error"
+    ],
+    "author": "toda <sp.azsolution.net@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/toda93/error/issues"
+    },
+    "homepage": "https://github.com/toda93/error#readme",
+    "scripts": {
+        "test": "node src/index.js"
+    }
 }

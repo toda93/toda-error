@@ -24,4 +24,5 @@ module.exports = Object.freeze({
     NOT_EMPTY: 'NOT_EMPTY',
     NOT_NULL: 'NOT_NULL',
     EXISTS_ITEMS: 'EXISTS_ITEMS',
+    MISSING_PARAM: 'MISSING_PARAM'
 });
