@@ -1,17 +1,19 @@
-const {NOT_FOUND, NOT_NULL, UNIQUE, UNKNOWN} = require('./code');
+const { NOT_FOUND, NOT_NULL, UNIQUE, UNKNOWN } = require('./code');
 
- function httpErrorHandler(e, req, res, next) {
+function httpErrorHandler(e, req, res, next) {
     const error = errorCatch(e);
 
-    if(process.env.NODE_ENV === 'development'){
+    if (process.env.NODE_ENV === 'development') {
         console.log(error.errors);
     }
-
-
-    return res.status(error.status).json({success: false, errors: error.errors});
+    return res.status(error.status).json({ success: false, errors: error.errors });
 }
 
- function errorCatch(e) {
+
+
+
+
+function errorCatch(e) {
     let status = 400;
     let errors = [];
 
@@ -50,13 +52,13 @@ const {NOT_FOUND, NOT_NULL, UNIQUE, UNKNOWN} = require('./code');
             }
             errors.push({
                 code: e.code,
-                message: e.code,
+                message: e.message,
                 data: e.errors
             });
         } else if (e.name === 'MulterError') {
             errors.push({
                 code: e.code,
-                message: e.code,
+                message: e.toString(),
             });
         }
     }
