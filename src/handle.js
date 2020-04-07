@@ -9,10 +9,6 @@ function httpErrorHandler(e, req, res, next) {
     return res.status(error.status).json({ success: false, errors: error.errors });
 }
 
-
-
-
-
 function errorCatch(e) {
     let status = 400;
     let errors = [];
