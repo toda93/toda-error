@@ -32,4 +32,5 @@ module.exports = Object.freeze({
     PROCESSING: 'PROCESSING',
     BLOCKED: 'BLOCKED',
     VALIDATE: 'VALIDATE',
+    LOGIN_FAILED: 'LOGIN_FAILED',
 });
